@@ -16,5 +16,4 @@ CLASS_NAMES="battery biological brown-glass cardboard clothes green-glass metal 
 python evaluate.py \
     --model_path $MODEL_PATH \
     --image_path $IMAGE_PATH \
-    --class_names $CLASS
-    _NAMES
+    --class_names $CLASS_NAMES
