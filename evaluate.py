@@ -6,10 +6,7 @@ import argparse
 from torchvision import transforms
 import os
 
-
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-
-
 
 def preprocess_image(image_path, image_size=224):
     preprocess = transforms.Compose([
@@ -19,7 +16,6 @@ def preprocess_image(image_path, image_size=224):
     ])
     image = Image.open(image_path).convert('RGB')
     return preprocess(image).unsqueeze(0)
-
 
 # load model
 def load_model(model_path):
@@ -56,7 +52,6 @@ def classify_image(model, image_tensor, classes):
     predicted_class = similarity.argmax(dim=-1).item()
 
     return classes[predicted_class]
-
 
 
 def main():

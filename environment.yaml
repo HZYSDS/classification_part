@@ -3,13 +3,12 @@ channels:
   - pytorch
   - defaults
 dependencies:
-  - python=3.8.5
-  - pip=20.3
+  - python=3.8.19
+  - pip=24.2
   - cudatoolkit=11.3
-  - pytorch=1.12.1
-  - torchvision=0.13.1
-  - numpy=1.23.1
-  - scipy=1.10.0
+  - pytorch=2.4.1
+  - torchvision=0.19.1
+  - numpy=1.24.4
   - tqdm
   - pip:
     - webdataset==0.2.5
