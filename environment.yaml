@@ -5,10 +5,10 @@ channels:
 dependencies:
   - python=3.8.19
   - pip=24.2
-  - cudatoolkit=11.3
+  # - cudatoolkit=11.3
   - pytorch=2.4.1
   - torchvision=0.19.1
-  - numpy=1.24.4
+  - numpy=2.1.2
   - tqdm
   - pip:
     - webdataset==0.2.5
